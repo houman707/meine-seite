@@ -1,2 +1,0 @@
-# meine-seite
-world cosmetics
