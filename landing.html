@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>World Cosmetic</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: white;
+      color: black;
+    }
+    header {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .menu-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+      background: black;
+      padding: 20px;
+      text-align: right;
+    }
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    footer {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .language-switch {
+      margin-top: 20px;
+    }
+    .language-switch a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+<header>World Cosmetic Group<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+<nav id="menu">
+<a href="index.html">Start</a>
+<a href="#about">Über uns</a>
+<a href="#products">Produkte</a>
+<a href="#contact">Kontakt</a>
+<a href="index.html#impressum">Impressum</a>
+</nav>
+<section id="landing">
+<img alt="World Cosmetic Logo" src="logo.png" style="max-width:200px;margin-bottom:20px;"/>
+<h1>Welcome to World Cosmetic</h1>
+<p>We are an international and luxurious cosmetic group producing high-quality beauty products such as mascara and lip liners in Europe. Our brands represent elegance, precision, and innovation in the beauty industry. Founded in 2023 and based in Dubai, World Cosmetic Group combines European craftsmanship with a global vision.</p>
+</section>
+<footer>
+    WORLD COSMETIC GIFTS TRADING CO. L.L.C – Dubai<br/>
+<div class="language-switch">
+<a href="index.html">Deutsch</a> | <a href="index-en.html">English</a>
+</div>
+</footer>
+<script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
