@@ -1,70 +1,143 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Cosmetic Group</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fff;
-      color: #000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    header {
-      position: relative;
-    }
-    header img {
-      max-width: 200px;
-      margin-bottom: 30px;
-    }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>World Cosmetic Group</title>
+<style>
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: white;
+    color: black;
+    padding: 6px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-weight: bold;
+    z-index: 1100;
+}
+
+.language-switcher a {
+    margin: 0 5px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
     nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
     nav a {
-      text-decoration: none;
-      color: #000;
-      font-size: 0.9em;
+        margin: 10px 0;
     }
-    h1 {
-      font-size: 2.5em;
-      text-transform: uppercase;
-      margin-bottom: 10px;
+    .language-switcher {
+        top: 10px;
+        right: 15px;
+        font-size: 14px;
+        padding: 4px 8px;
     }
-    p {
-      font-size: 1.1em;
-      max-width: 700px;
-      margin-bottom: 20px;
-    }
-    .highlight {
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+}
+</style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="World Cosmetic Group Logo">
-    <nav><a href="index-en.html">English</a></nav>
-  </header>
-  <h1>World Cosmetic Group</h1>
-  <p class="highlight">Where Beauty Meets Excellence</p>
-  <p>Wir sind eine internationale Kosmetikgruppe mit Produktionsstandorten in Europa und mehreren hochwertigen Marken weltweit.</p>
-  <p>Unsere Leidenschaft ist Qualität – von tiefschwarzer Mascara bis zu präzisen Liplinern bieten wir kompromisslose Performance in stilvollem Design.</p>
-  <p>Unsere Produkte setzen Standards in Innovation, Ästhetik und Nachhaltigkeit.</p>
-  <footer>
-    &copy; 2025 World Cosmetic Group – All rights reserved
-  </footer>
+<div class="language-switcher" style="position: absolute; top: 10px; right: 20px; background: white; color: black; padding: 5px 10px; border-radius: 5px; font-weight: bold;"><a href="index.html" style="margin-right: 10px; color: black; text-decoration: none;">DE</a><a href="index-en.html" style="color: black; text-decoration: none;">EN</a></div><nav style="background-color: black; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
+<div style="font-weight: bold;">WORLD COSMETIC GROUP</div>
+<div>
+<a href="#home" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
+<a href="#about" style="color: white; margin-right: 15px; text-decoration: none;">Über uns</a>
+<a href="#products" style="color: white; margin-right: 15px; text-decoration: none;">Produkte</a>
+<a href="#contact" style="color: white; margin-right: 15px; text-decoration: none;">Kontakt</a>
+<a href="#impressum" style="color: white; text-decoration: none;">Impressum</a>
+</div>
+</nav>
+<header>
+<img alt="World Cosmetic Group Logo" src="logo.png"/>
+<nav><a href="index-en.html">English</a></nav>
+</header>
+<h1>World Cosmetic Group</h1>
+<p class="highlight">Where Beauty Meets Excellence</p>
+<p>Wir sind eine internationale Kosmetikgruppe mit Produktionsstandorten in Europa und mehreren hochwertigen Marken weltweit.</p>
+<p>Unsere Leidenschaft ist Qualität – von tiefschwarzer Mascara bis zu präzisen Liplinern bieten wir kompromisslose Performance in stilvollem Design.</p>
+<p>Unsere Produkte setzen Standards in Innovation, Ästhetik und Nachhaltigkeit.</p>
+<footer>© 2023 WORLD COSMETIC GIFTS TRADING CO. L.L.C</footer>
+<section id="impressum" style="padding: 40px 20px; background: #f9f9f9; color: #000;">
+<h2>Impressum</h2>
+<h3>Rechtliche Hinweise (UAE &amp; Deutschland)</h3>
+<p>Diese Website wird betrieben von WORLD COSMETIC GIFTS TRADING CO. L.L.C, einer in den Vereinigten Arabischen Emiraten 
+  (Dubai) registrierten Gesellschaft mit beschränkter Haftung (LLC).</p>
+<p>Wir bemühen uns um korrekte und aktuelle Inhalte, übernehmen jedoch keine Gewähr für die Vollständigkeit und Richtigkeit 
+  der bereitgestellten Informationen.</p>
+<h3>Haftungshinweis</h3>
+<p>Trotz sorgfältiger Kontrolle übernehmen wir keine Haftung für externe Links. Für den Inhalt der verlinkten Seiten 
+  sind ausschließlich deren Betreiber verantwortlich.</p>
+<h3>Datenschutzerklärung</h3>
+<p>Wir respektieren Ihre Privatsphäre. Diese Website sammelt keine personenbezogenen Daten ohne Ihre ausdrückliche Zustimmung.
+  Alle Informationen werden vertraulich und gemäß geltendem Recht behandelt.</p>
+</section>
 </body>
 </html>
