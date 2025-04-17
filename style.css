@@ -1,0 +1,119 @@
+
+/* Reset + Basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+/* Header Topbar */
+header .topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Seitenmenü */
+.side-menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  color: white;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.side-menu a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+
+.side-menu a:hover {
+  background: #222;
+}
+
+/* Main Section */
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Language Switch */
+footer.language-switch {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #f5f5f5;
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
+  border-top: 1px solid #ccc;
+}
+
+footer.language-switch a {
+  color: #111;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer.language-switch a:hover {
+  text-decoration: underline;
+}
+
+/* Logo Bild */
+.logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .side-menu {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+}

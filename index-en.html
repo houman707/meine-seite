@@ -1,147 +1,125 @@
+
 <!DOCTYPE html>
-
-<html lang="de">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>World Cosmetic Group</title>
-<style>
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: white;
-    color: black;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-nav {
-    background-color: black;
-    color: white;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav a {
-    color: white;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ccc;
-}
-
-.language-switcher {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    background-color: white;
-    color: black;
-    padding: 6px 10px;
-    border: 2px solid black;
-    border-radius: 4px;
-    font-weight: bold;
-    z-index: 1100;
-}
-
-.language-switcher a {
-    margin: 0 5px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.language-switcher a:hover {
-    text-decoration: underline;
-}
-
-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-h1, h2, h3 {
-    color: black;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 30px;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Cosmetic Group</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: white;
+      color: black;
+      overflow-x: hidden;
     }
-    nav a {
-        margin: 10px 0;
+    header {
+      background: black;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .language-switcher {
-        top: 10px;
-        right: 15px;
-        font-size: 14px;
-        padding: 4px 8px;
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
     }
-}
-</style>
+    #menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 1100;
+    }
+    #menu a {
+      padding: 10px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+    #menu a:hover {
+      background-color: #333;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    img.logo {
+      max-width: 240px;
+      margin-bottom: 30px;
+    }
+    footer {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .language-switch {
+      margin-top: 20px;
+    }
+    .language-switch a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
-<div class="language-switcher" style="position: absolute; top: 10px; right: 20px; background: white; color: black; padding: 5px 10px; border-radius: 5px; font-weight: bold;"><a href="index.html">Deutsch</a> | <a href="index-en.html">English</a></div><nav style="background-color: black; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center;">
-<div style="font-weight: bold;">WORLD COSMETIC GROUP</div>
-<div>
-<a href="#home" style="color: white; margin-right: 15px; text-decoration: none;">Home</a>
-<a href="#about" style="color: white; margin-right: 15px; text-decoration: none;">About Us</a>
-<a href="#products" style="color: white; margin-right: 15px; text-decoration: none;">Products</a>
-<a href="#contact" style="color: white; margin-right: 15px; text-decoration: none;">Contact</a>
-<a href="#impressum" style="color: white; text-decoration: none;">Legal Notice</a>
-</div>
-</nav>
-<header>
-<img alt="World Cosmetic Group Logo" src="logo.png"/>
-<nav><a href="index-en.html">English</a></nav>
-</header>
-<h1>World Cosmetic Group</h1>
-<p class="highlight">Where Beauty Meets Excellence</p>
-<p>Wir sind eine internationale Kosmetikgruppe mit Produktionsstandorten in Europa und mehreren hochwertigen Marken weltweit.</p>
-<p>Unsere Leidenschaft ist Qualität – von tiefschwarzer Mascara bis zu präzisen Liplinern bieten wir kompromisslose Performance in stilvollem Design.</p>
-<p>Unsere Produkte setzen Standards in Innovation, Ästhetik und Nachhaltigkeit.</p>
-<footer>© 2023 WORLD COSMETIC GIFTS TRADING CO. L.L.C</footer>
-<section id="impressum" style="padding: 40px 20px; background: #f9f9f9; color: #000;">
-<h2>Legal Notice</h2>
-<p><strong>WORLD COSMETIC GIFTS TRADING CO. L.L.C</strong><br/>
-        World Cosmetic Group<br/>
-        Business Bay, Dubai, United Arab Emirates<br/>
-        Registered in Dubai – 2023<br/>
-        Authorized Representatives: Executive Management</p>
-<h3>Legal Information (UAE &amp; Germany)</h3>
-<p>This website is operated by WORLD COSMETIC GIFTS TRADING CO. L.L.C,
-        a limited liability company registered in Dubai, UAE.</p>
-<p>We strive for accurate and up-to-date content, but accept no liability for completeness or accuracy.</p>
-<h3>Disclaimer</h3>
-<p>Despite careful control, we assume no liability for the content of external links.
-        The respective operators are solely responsible for the content of linked pages.</p>
-<h3>Privacy Policy</h3>
-<p>We respect your privacy. This website does not collect any personal data without your explicit consent.
-        All information is treated confidentially and in accordance with applicable laws.</p>
-</section>
+  <header>
+    <div>World Cosmetic Group</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div id="menu">
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="impressum.html">Imprint</a>
+    <a href="index-en.html">English</a>
+  </div>
+
+  <section id="home">
+    <img src="logo.png" alt="World Cosmetic Logo" class="logo"/>
+    <h1>Willkommen bei World Cosmetic</h1>
+    <p>World Cosmetic Group ist ein internationales und luxuriöses Kosmetikunternehmen mit Produktionsstandorten in Europa. 
+    Unsere hochwertigen Products wie Mascara und Lipliner stehen für Eleganz, Präzision und Innovation. 
+    Gegründet 2023 in Dubai, verbinden wir europäisches Handwerk mit globaler Vision.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 World Cosmetic Group – Alle Rechte vorbehalten.
+    <div class="language-switch">
+      <a href="index-en.html">English</a> | <a href="index-en.html">English</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.style.width === "250px") {
+        menu.style.width = "0";
+      } else {
+        menu.style.width = "250px";
+      }
+    }
+  </script>
 </body>
 </html>
